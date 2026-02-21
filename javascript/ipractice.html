@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="button1">Button1</button>
+    <button type="button" id="button2">Button2</button>
+    <h2>Total clicks:<span id="count">0</span></h2>
+    <script>
+        let count=0;
+        let result=document.getElementById('button1');
+        result.addEventListener("click",function(){
+            count++;
+            document.getElementById('count').innerHTML=count;
+        })
+        let result2=document.getElementById('button2');
+        result2.addEventListener("click",function(){
+            count--;
+            document.getElementById('count').innerHTML=count;
+        })
+    </script>
+
+    <select id="dropdown">
+        <option value="light">Light</option>
+         <option value="dark">Dark</option>
+    </select>
+    <script>
+        let theme=document.getElementById('dropdown');
+        theme.addEventListener("change",function(){
+            if(dropdown.value=="Light"){
+                document.body.style.backgroundColor='white';
+            }else{
+                document.body.style.backgroundColor='black';
+            }
+        })
+    </script>
+
+
+
+
+
+<form id="form">
+    <input type="email" id="email">
+    <button type="submit">Submit</button>
+</form>
+<p id="message"></p>
+<script>
+    document.getElementById("form").addEventListener("submit",function(e){
+        e.preventDefault();
+        let mail=document.getElementById("email").value;
+        let message=document.getElementById("message");
+        if(mail==="")
+    {
+        document.getElementById("message").innerHTML="Email required";
+    }
+    else{
+        document.getElementById("message").innerHTML="Email saved";
+    }
+    })
+</script>
+
+<input type="text" id="input1">
+<p id="counter">Characters Typed: </p>
+<script>
+    let input=document.getElementById('input1');
+    input.addEventListener("input",function(){
+        let length=input.value.length;
+        document.getElementById('counter').innerHTML="Character typed:"+length;
+    })
+</script>
+
+
+<p id="text">Hello this is MJ</p>
+<script>
+    let text1=document.getElementById('text');
+    text1.addEventListener("mouseover",function(){
+        text1.style.color='green';
+    })
+    text1.addEventListener("mouseout",function(){
+        text1.style.color='black';
+    })
+</script>
+
+
+<script>
+    let name="javascript";
+    console.log(name.toUpperCase());
+
+    let word="Developer";
+    console.log(word.slice(0,4));
+
+    let sentence="Hello World";
+    console.log(sentence.replace("World","JavaScript"));
+
+    let email="test@gmail.com";
+    console.log(email.includes("jyo"));
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users={name:'jyothika',batch:'B.E',email:'jyo@gmail.com',no:123}
+        console.log(users)
+
+        // empty object
+        let person={}
+        //adding properties
+        person.name='abc';
+        person['age']=24;
+        person.no=12345;
+        person['email']='abc@gmail.com';
+        console.log(person);
+
+        //updating properties
+        person.age=26;
+        console.log(person);
+
+        //accessing properties
+        console.log(person.name)
+
+        //deleting the properties
+        delete person.no;
+        console.log(person)
+
+        //functions as object properties
+        let user1={
+            name:'xyz',
+            age:25,
+            greet:function(){
+                console.log("hello"+this.name)
+            }
+        }
+        console.log(user1.greet())
+        console.log(user1)
+    </script>
+</body>
+</html>

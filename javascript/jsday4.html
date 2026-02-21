@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----------------------if------------------------------------>
+    <p>Display good day if hrs is less than 18:00</p>
+    <p id="demo">Good evening</p>
+    <script>
+        if (new Date().getHours()<18)
+    {
+        document.getElementById("demo").innerHTML="Good day!";
+    }
+    </script>
+<!--------if else-->
+    <p id="demo1"></p>
+    <script>
+        const hour=new Date().getHours();
+        let greeting;
+        if(hour > 15)
+        {
+            greeting="Good day";
+        } 
+        else {
+            greeting="Good evening";
+        }
+        document.getElementById("demo1").innerHTML=greeting;
+    </script>
+<!---if else if-->
+    <p id="demo3"></p>
+    <script>
+        const time=new Date().getHours();
+        let greeting2;
+        if(time < 10){
+            greeting2 = "Good Mrg";
+        } else if (time < 18) {
+            greeting2 = "Good day";
+        } else {
+            greeting2 = "Good evening"
+        }
+        document.getElementById("demo1").innerHTML=greeting2;
+    </script>
+    <!----------switch -->
+    <p id="demo4"></p>
+    <script>
+        let day;
+        switch(new Date().getDay()){
+            case 0:day="Sunday";
+            break;
+            case 1:day="Monday";
+            break;
+            case 2:day="Tuesday";
+            break;
+            case 3:day="Wednesday";
+            break;
+            case 4:day="Thursday";
+            break;
+            case 5:day="Friday";
+            break;
+            case 6:day="Saturday";
+            break;
+        }
+        document.getElementById("demo4").innerHTML="Today is"+ day;
+    </script>
+
+    <p id="demo5"></p>
+    <script>
+        let x="0";
+        switch(x){
+            case 0:
+                text="off";
+                break;
+            case 1:
+                text="on";
+                break;
+            default:
+                text="No value"
+        }
+        document.getElementById("demo4").innerHTML=text;
+    </script>
+
+
+
+
+    <p id="demo6"></p>
+    <script>
+        let text = "";
+        for(i=0;i<5;i++){
+            text+= "the number is" + i + "<br>"
+        }
+        document.getElementById("demo5").innerHTML=text;
+    </script>
+
+
+
+
+    <p id="demo7"></p>
+    <script>
+        const person={fname:"John",lname:"Joe",age:25}
+        let txt="";
+        for(let x in person)
+    {
+        txt+=person[x]+" ";
+    }
+    document.getElementById("demo7").innerHTML=txt;
+    </script>
+
+
+
+    <p id="demo8"></p>
+    <script>
+        const cars=["BMW","Audi"]
+        let text3="";
+        for(let x of cars ){
+            text3+=x+"<br>";
+        }
+        document.getElementById("demo8").innerHTML=text3;
+    </script>
+
+<!----------while loop------------->
+<p id="while"></p>
+<script>
+    let text4="";
+    let i=0;
+    while(i<10){
+        text4+="<br>The number is "+ i;
+        i++;
+    }
+    document.getElementById("while").innerHTML=text4;
+
+</script>
+
+<!--------------Do while loop---------->
+<p id="dowhile"></p>
+<script>
+    let text5="";
+    let j=0;
+    do{
+        text5+="<br>The number is" + j;
+        j++;
+
+    }
+    while(j<10);
+    document.getElementById("dowhile").innerHTML=text5;
+</script>
+
+<!----------Break loop -->
+<p id="break"></p>
+<script>
+    let text6="";
+    for(let i=0;i<10;i++){
+        if(i === 3){
+            break;
+        }
+        text6+="The number is"+ i + "<br>"
+    }
+    document.getElementById("break").innerHTML=text6;
+</script>
+
+<!------------Continue--------->
+<p id="continue"></p>
+<script>
+    let text7="";
+    for(let i=0;i<10;i++){
+        if(i === 3){
+            continue;
+        }
+        text7+="The number is"+ i + "<br>"
+    }
+    document.getElementById("continue").innerHTML=text7;
+</script>
+
+<!---------------Set in Js------------->
+<p id="set"></p>
+<script>
+    const letters=new Set(["a","b","c"]);
+    console.log(letters);
+     document.getElementById("set").innerHTML=letters.size;  //ignore repeated values
+</script>
+<!-----creating empty set and adding new elements using add----->
+<p id="set1"></p>
+<script>
+    const letters1=new Set();
+    letters1.add("a");
+    letters1.add("b");
+    letters1.add("c");
+document.getElementById("set1").innerHTML=letters1.size;  
+</script>
+
+
+<!--------assigning and then adding values -------->
+<p id="set2"></p>
+<script>
+    const letters2=new Set();
+    const a2="a";
+    const b2="b";
+    const c2="c";
+    letters2.add(a2);
+    letters2.add(b2);
+    letters2.add(c2);
+document.getElementById("set2").innerHTML=letters2.size;  
+</script>
+
+<p id="demoo"></p>
+<script>
+    const letters4=new Set(["a","b","c"]);
+    let text8="";
+    for(const x of letters4.values()){
+        text8+=x + "<br>";
+    }
+    document.getElementById("demoo").innerHTML=text8;
+</script>
+</body>
+</html>

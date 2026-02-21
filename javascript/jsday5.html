@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let email = "abc123@gmail.com";
+        let pattern = /^[a-z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,}$/;   //^ tells start with, . means +, $ means end
+        console.log(pattern.test(email));
+    </script>
+
+    <script>
+        let phone = "8904496593";
+        let pattern1 = /^[6-9]\d{9}$/;
+        console.log(pattern.test(phone));
+    </script>
+
+
+    <!---------error handling----------------------------->
+
+    <script>
+        //try defines block of code to test for errors
+        try {
+            let result = x + 10;
+        } catch (error) {
+            console.log("error occured:", error.message);
+        }
+        finally {
+            console.log("This always runs");
+        }
+    </script>
+
+    <script>
+        let age = 15;
+        try {
+            if (age < 18) {
+                throw new Error("not eligible to vote");
+            }
+            console.log("eligible");
+        } catch (error) {
+            console.log(error.message);
+        }
+    </script>
+
+    <!-----------------------this method------------------------------>
+    <script>
+        let obj =
+        {
+            name: "Jyothika",
+            greet: function () {
+                console.log("hello" + " " + this.name);
+            }
+        }
+        obj.greet();
+    </script>
+
+    <script>
+        //call method 
+        //calls function immediately and arguments passed one by one
+
+        function greet1(city, country) {
+            console.log("Hello" + " " + this.name + " " + "from" + " " + city + "," + country)
+        }
+
+        let person1 = { name: "abc" };
+        let person2 = { name: "xyz" };
+
+        greet1.call(person1, "Madikeri", "India");
+        greet1.call(person2, "Banglore", "India");
+
+    </script>
+
+    <script>
+        //apply method 
+        //same as call but arguments are passed as an array
+        function greet2(city, country) {
+            console.log("Hello" + " " + this.name + " " + "from" + " " + city + "," + country)
+        }
+
+        let person3 = { name: "abc" };
+
+        greet2.apply(person3, ["Madikeri", "India"]);
+    </script>
+
+    <script>
+        //bind method it returns a new function
+        function demo(city) {
+            console.log("hello" + this.name + " " + "from" + city);
+        }
+        let user = { name: "alice" };
+
+        let newFunction = demo.bind(user);
+
+        newFunction("Manglore");
+    </script>
+
+
+    <!---------------reversing a complete sentence----------->
+    <script>
+        let sentence = "Hello world";
+        let result = sentence.split("").reverse().join("");
+        console.log(result);
+    </script>
+
+    <!------------------JS constructor--------------------------->
+    <p id="demo1"></p>
+    <script>
+        class Car {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+        const myCar = new Car("Ford", 2014);
+        document.getElementById("demo1").innerHTML = myCar.name + " " + myCar.year;
+    </script>
+
+    <!------------------class methods--------------------------------->
+    <p id="demo2"></p>
+    <script>
+        class Car1 {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        const myCar1 = new Car1("benz", 2014);
+        document.getElementById("demo2").innerHTML = "My car is" + myCar1.age() + "year old";
+    </script>
+
+    <!-------------------------class method with parameter----------->
+    <p id="demo3"></p>
+    <script>
+        class Car2 {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age(x) {
+                return x - this.year;
+            }
+        }
+        const date = new Date();
+        let year = date.getFullYear();
+        const myCar2 = new Car2("benz", 2016);
+        document.getElementById("demo3").innerHTML = "My car is" + myCar2.age(year) + "year old";
+    </script>
+
+    <!------------------js modules----------------------->
+    <p id="module1"></p>
+    <script type="module">
+        import { name, age } from "./person.js";
+        let text = "My name is" + name + "I am" + age + ".";
+        document.getElementById("module1").innerHTML = text;
+
+    </script>
+
+
+    <!------------------------JSON syntax rules------->
+        <p id="demo2"></p>
+        <script>
+            let text2 = '{"employees":[' +
+                '{"firstName": "John", "lastName": "Doe" },' +
+                '{"firstName": "Fred", "lastName": "Smith" },' +
+                '{"firstName": "Peter", "lastName": "Jones" }]}';
+
+            //A common use of JSON is to read data from a web server, and display the data in a web page. JavaScript built-in function JSON.parse() to convert the string into a JavaScript object:(obj here)
+            const obj2= JSON.parse(text2);
+
+            //Finally, use the new JavaScript object in your page:
+            document.getElementById("demo2").innerHTML =
+                obj2.employees[1].firstName + " " + obj2.employees[1].lastName;
+        </script>
+</body>
+</html>

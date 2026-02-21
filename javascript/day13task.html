@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task1
+
+        let fruits=["Apple","Banana","Mango"];
+        console.log(fruits)
+
+        //Adding orange at the end
+        fruits.push("Orange")
+        console.log(fruits)
+
+        //Remove last element
+        fruits.pop()
+        console.log(fruits)
+
+        //Finding index of Banana
+        console.log(fruits.indexOf("Banana"))
+
+        //Printing array length
+        console.log(fruits.length)
+
+
+        //task2
+        
+        //object access
+        let student={
+            name:"XYZ",
+            age:21,
+            course:"BE"
+        };
+        console.log(student)
+
+        //printing person name
+        console.log(student.name)
+
+        //Changing age to 22
+        student.age=22
+        console.log(student)
+
+        //adding new property called City
+        student.city="Madikeri";
+        console.log(student)
+
+        //Deleting the course
+        delete student.course
+        console.log(student)
+
+        //Task3
+
+        //Using map to square the numbers
+        let num1=[1,2,3,4,5]
+        let result1=num1.map(n=>n*n)
+        console.log(result1)
+        console.log(num1)
+
+        //Using filter to find odd number
+        let num2=[10,11,12,13,14,15]
+        let result2=num2.filter(n=>n%2!=0)
+        console.log(result2)
+        console.log(num2)
+
+        //using reduce to find sum
+        let num3=[11,12,13,14,15]
+        let result3=num3.reduce((total,n)=>total+n)
+        console.log(result3)
+        console.log(num3)
+
+    
+    </script>
+</body>
+</html>

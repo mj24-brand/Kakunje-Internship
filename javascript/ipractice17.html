@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function divide(a,b){
+            try{
+                if(b===0){
+                    throw new Error("Cannot divide by zero");
+                }
+               let result=a/b;
+               console.log(result);
+            }
+            catch(error){
+                console.log(error.message);
+            }
+            finally{
+                console.log("Operation completed");
+            }
+        }
+        divide(10,0)
+    </script>
+
+
+
+<!---------palindrome------------------->
+<script>
+    function isPalindrome(number){
+        let actual=number.toString();
+        let reverse=actual.split("").reverse().join("");
+        return(actual==reverse);
+    }
+    console.log(isPalindrome(1227))
+</script>
+
+
+<!-----------swap two variables------------->
+<script>
+    let a=10;
+    let b=20;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    console.log("a=",a);
+    console.log("b=",b);
+</script>
+
+<!----------remove duplicates------------>
+<script>
+    function duplicate(str){
+        return [...new Set(str)].join("");// ... is a spread operator and used to create objects, join is used for array
+    }
+    console.log(duplicate("aabbcc"));
+</script>
+
+<!-----------regular exp--------------->
+<script>
+    let number="12345";
+    let pattern=/^[0-9]+$/;
+    console.log(pattern.test(number));
+</script>
+
+<script>
+    let words="Javascript";
+    let pattern1=/[aeiou]/gi;
+    console.log(words.match(pattern1).join(""));
+</script>
+</body>
+</html>

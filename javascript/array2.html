@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num=[20,46,30,20,45,60]
+        //indexOf used to find index value of first occurence of element
+        console.log(num.indexOf(20));
+
+        //lastindexOf used to find index value of last occurence of element
+        console.log(num.lastIndexOf(20));
+
+        //sort the array
+        console.log(num.sort())
+
+        //reverse
+        console.log(num.reverse())
+
+        //slice => extract sub array
+        //console.log(num.slice(1,4)) //from index, to index(n-1)
+
+        //splice
+        console.log(num.splice(1,2,67,80))
+        console.log(num)
+
+        //Concate=>merge two or more array
+        let arr1=[1,2,3];
+        let arr2=[4,5,6];
+        let arr3=arr1.concat(arr2)
+        console.log(arr3)
+        
+    </script>
+</body>
+</html>

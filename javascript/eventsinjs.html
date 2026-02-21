@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--using inline-->
+    <button onclick="showmessage()">Click</button>
+    <script>
+        function showmessage(){
+            alert("button is clicked")
+        }
+    </script>
+
+
+<!--------------------------------------------------------->
+<button id="btn">click</button>
+<script>
+    let btn=document.getElementById('btn');
+    btn.addEventListener("click",function(){
+    alert("button is clicked")
+    })
+
+</script>
+<!------------------------------------------------------------->
+
+<div id="box" style="width: 100px; height: 100px; background-color: blueviolet;"></div>
+
+<script>
+    let box=document.getElementById('box');
+    box.addEventListener("mouseover",function(){
+        box.style.backgroundColor='red';
+    })
+    box.addEventListener("mouseout",function(){
+        box.style.backgroundColor='yellow';
+    })
+</script>
+<!------------------------------------------------------------------->
+
+<select id="city">
+    <option>Mangalore</option>
+    <option>Bangalore</option>
+    <option>Mysore</option>
+</select>
+<p id="result"></p>
+<script>
+    document.getElementById("city").addEventListener("change",function(){
+        document.getElementById("result").innerHTML=this.value
+    })
+</script>
+
+<!----------------------------------------------------------------->
+
+<form id="myform">
+    <input type="text" id="name">
+    <button type="submit">submit</button>
+</form>
+
+<script>
+    document.getElementById("myform").addEventListener("submit",function(e){
+        e.preventDefault();
+        let name=document.getElementById("name").value;
+        if(name==""){
+            alert("name is required")
+        }else{
+            alert("form submitted")
+        }
+    })
+</script>
+
+<!------------------------------------------------------->
+<button id="btn1">click button</button>
+<p>Total count:<span id="count">0</span></p>
+<script>
+    let count=0;
+    document.getElementById('btn1').addEventListener("click",function(){
+        count++;
+        document.getElementById('count').innerHTML=count;
+    })
+</script>
+
+
+<!-------------------------------------------------------->
+<input type="text" id="name2">
+<p id="p1"></p>
+<script>
+    let input=document.getElementById('name2');
+    input.addEventListener("keydown",function(){
+        document.getElementById('p1').innerHTML=input.value;
+    })
+</script>
+</body>
+</html>

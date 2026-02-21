@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-------------------------IF EXAMPLES------------------------------------>
+    <p id="if1">Good evening</p>
+    <script>
+        let greeting;
+        if(new Date().getHours()<17){
+            document.getElementById("if1").innerHTML="Good Afternoon!";
+
+        }
+    </script>
+
+    <p id="if-else"></p>
+    <script>
+        const hours=new Date().getHours();
+        let greeting1;
+        if(hours<14){
+            greeting1="Good Afternoon";
+        } else {
+            greeting1="Good evening";
+        }
+        document.getElementById("if-else").innerHTML=greeting1;
+    </script>
+
+    <p id="ifelseif"></p>
+    <script>
+        const hours1=new Date().getHours();
+        let greeting2;
+        if(hours1<11){
+            greeting2="Hello mrg";
+        } else if(hours1<16){
+            greeting2="Hello afternoon";
+        } else{
+            greeting2="Hello evening";
+        }
+        document.getElementById("ifelseif").innerHTML=greeting2;
+            </script>
+
+
+
+
+<!--------------------SWITCH CASE EG------------------------>
+<p id="switch"></p>
+<script>
+    let day;
+    switch(new Date().getDay()){
+        case 0:day="Sunday";
+        break;
+        case 1:day="Monday";
+        break;
+        case 2:day="Tuesday";
+        break;
+        case 3:day="Wednesday";
+        break;
+        case 4:day="Thursday";
+        break;
+        case 5:day="Friday";
+        break;
+        case 6:day="Saturday";
+        break;
+    }
+    document.getElementById("switch").innerHTML="Today is " + day;
+</script>
+
+
+
+<p id="bulb"></p>
+<script>
+    let x="0";
+    switch(x){
+        case 0:
+        text="off";
+        break;
+        case 1:
+        text="on";
+        break;
+        default:text="No value";
+    }
+    document.getElementById("bulb").innerHTML=text;
+</script>
+
+
+
+<!-----------------------FOR LOOP----------------------------->
+<p id="for"></p>
+<script>
+    let num1="";
+    for(i=0;i<5;i++){
+        num1 = num1+ "The number is : " + i + "<br>";
+    }
+    document.getElementById("for").innerHTML=num1;
+</script>
+
+<p id="forin"></p>
+<script>
+    let text1="";
+    const person={fname:"Jyothika", lname:"MJ",age:22};
+    for(let x in person){
+        text1 = text1+person[x]+ " ";
+    }
+    document.getElementById("forin").innerHTML=text1;
+</script>
+
+<p id="forof"></p>
+<script>
+    let text2="";
+    const cars=["BMW","Audi"];
+    for(let y of cars){
+        text2+=y + "<br>";
+    }
+    document.getElementById("forof").innerHTML=text2;
+</script>
+
+<!--------------------while and do-while--------------------->
+<p id="while"></p>
+<script>
+    let i=0;
+    let resultof="";
+    while(i<9){
+        resultof += "The number is : " + i +"<br>";
+        i++;
+    }
+    document.getElementById("while").innerHTML=resultof;
+</script>
+
+<p id="do-while"></p>
+<script>
+    let resultof1="";
+    let j=2;
+    do{
+        resultof1+="The number is: " + j +"<br>";
+j++;
+    }
+    while(j<5);
+    document.getElementById("do-while").innerHTML=resultof1;
+</script>
+
+
+<!-----------------------break and continue--------------------->
+<p id="break"></p>
+<script>
+    let arr=[2,5,9,-8,4];
+    let resulttt="";
+    for(i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            break;
+        }
+        resulttt+=arr[i]+" ";
+    }
+    document.getElementById("break").innerHTML=resulttt;
+</script>
+
+<p id="continue"></p>
+<script>
+    let resultttt="";
+    let arr1=[1,2,3,4,5,6];
+    for(i=0;i<arr1.length;i++){
+        if(arr1[i]%2==0){
+            continue;
+        }
+        resultttt+=arr1[i]+ " ";
+
+    }
+     document.getElementById("continue").innerHTML=resultttt;
+</script>
+
+
+<!--------------------------------------set------------------------>
+<p id="set1"></p>
+<script>
+    const values1=new Set(["apple","Mango","Orange"]);
+    console.log(values1);
+    document.getElementById("set1").innerHTML=values1.size;
+</script>
+
+<p id="set2"></p>
+<script>
+    const values2=new Set();
+    values2.add("a");
+     values2.add("b");
+      values2.add("c");
+      console.log(values2)
+document.getElementById("set2").innerHTML=values2.size;
+</script>
+
+<p id="set3"></p>
+<script>
+    const values3=new Set();
+    const a1=("a2");
+     const b1=("b2");
+      const c1=("c2");
+      values3.add(a1);
+      values3.add(b1);
+      values3.add(c1);
+      console.log(values3)
+</script>
+
+<p id="set4"></p>
+<script>
+    const values4=new Set(["aa","bb","cc"]);
+    let total="";
+    for(const x of values4.values()){
+        total += x+" ";
+    }
+console.log(values4)
+    document.getElementById("set4").innerHTML=values4.size;
+</script>
+
+
+<!-------------MAP methods------------------>
+<!--<p id="set"></p>
+<script>
+    const deserts=new Map();
+    deserts.set("donats",2),
+    deserts.set("franklin",5)
+    deserts.set("fran",10)
+    deserts.set("klin",8)
+    document.getElementById("set").innerHTML=deserts.size;
+console.log(deserts)
+document.getElementById("set").innerHTML=deserts.get("klin");
+deserts.delete("klin")
+document.getElementById("set").innerHTML=deserts.size;
+document.getElementById("set").innerHTML=deserts.has("donats")
+</script>-->
+
+<p id="entry"></p>
+<script>
+    const deserts1=new Map();
+    deserts1.set("donats",2),
+    deserts1.set("franklin",5)
+    deserts1.set("fran",10)
+    deserts1.set("klin",8)
+    let ans="";
+    for(const x of desert1.entries()){
+        ans+=x+" ";
+    }
+    document.getElementById("entry").innerHTML=ans;
+    </script>
+
+    <!----------------------regular expression-------------------------->
+    <p id="re1"></p>
+    <script>
+        let text="I am \Hello my \deArs hello";
+        let answer=text.match(/[a]/ig);
+        document.getElementById("re1").innerHTML=answer;
+    </script>
+
+    <p id="re2"></p>
+    <script>
+        let text4="123456789";
+        let answer2=text4.search(/[1-4]/g)
+        document.getElementById("re2").innerHTML=answer2;
+    </script>
+
+    <p id="demo6"></p>
+    <script>
+       const object=/e/.exec("Hello i am Jyothika");
+       document.getElementById("demo6").innerHTML="Founded "+ object[0] + "in the position" +object.index+ " in the text :" + object.input;
+
+
+       //js condi.. like if,ifelse,elseifeg, switch,for,for in and of,while,dowhilejs break,continue,sets,creating and add,map,create,set,get,size
+       //,delete,clear,has,foeach,entries,keys,values,diff btwn obj nd map,typeof-string,no,boolean,bigint,symbol,null,undefined,complexdtype,re-igmd.
+    </script>
+
+</body>
+</html>

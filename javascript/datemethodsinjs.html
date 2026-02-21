@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript getTime()The getTime() function returns the number of milliseconds since then</h2>
+    <p>The internal clock in JavaScript counts from midnight January 1, 1970.</p>
+    <p id="demo"></p>
+
+    <script>
+        const d = new Date();//new date is constructor,also get current year
+        document.getElementById("demo").innerHTML = d.getTime();
+    </script>
+    <hr>
+    <h2>JavaScript getFullYear():The getFullYear() method returns the full year of a date:</h2>
+    <p id="demo1"></p>
+
+    <script>
+        const d1 = new Date();
+        document.getElementById("demo1").innerHTML = d1.getFullYear();
+    </script>
+    <hr>
+    <h2>JavaScript getMonth()The getMonth() method returns the month of a date as a number from 0 to 11</h2>
+    <p>To get the correct month, you must add 1:</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        const d2 = new Date();
+        document.getElementById("demo2").innerHTML = d2.getMonth() + 1; //In JavaScript, the first month (January) is month number 0, so December returns month number 11.
+    </script>
+    <hr>
+    <h2>JavaScript getMonth()</h2>
+    <p>The getMonth() method returns the month as a number.</p>
+    <p>You can use an array to display the name of the month:</p>
+
+    <p id="demo3"></p>
+
+    <script>
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const d3 = new Date();
+        let month = months[d3.getMonth()];
+        document.getElementById("demo3").innerHTML = month;
+    </script>
+    <hr>
+    <h2>JavaScript getDate():The getDate() method returns the day of a date as a number (1-31)</h2>
+    <p id="demo4"></p>
+
+    <script>
+        const d4 = new Date();
+        document.getElementById("demo4").innerHTML = d4.getDate();
+    </script>
+    <hr>
+    <h2>JavaScript getHours()The getHours() method returns the hours of a date as a number (0-23)</h2>
+    <p id="demo5"></p>
+
+    <script>
+        const d5 = new Date();
+        document.getElementById("demo5").innerHTML = d5.getHours();
+    </script>
+    <hr>
+    <h2>JavaScript getMinutes()The getMinutes() method returns the minutes of a date as a number (0-59)</h2>
+    <p id="demo6"></p>
+
+    <script>
+        const d6 = new Date();
+        document.getElementById("demo6").innerHTML = d6.getMinutes();
+    </script>
+    <hr>
+    <h2>JavaScript getSeconds()The getSeconds() method returns the seconds of a date as a number (0-59)</h2>
+    <p id="demo7"></p>
+
+    <script>
+        const d7 = new Date();
+        document.getElementById("demo7").innerHTML = d7.getSeconds();
+    </script>
+    <hr>
+    <h2>JavaScript getMilliseconds():The getMilliseconds() method returns the milliseconds of a date as a number (0-999)
+    </h2>
+    <p id="demo8"></p>
+
+    <script>
+        const d8 = new Date();
+        document.getElementById("demo8").innerHTML = d8.getMilliseconds();
+    </script>
+    <hr>
+    <h2>JavaScript getDay()The getDay() method returns the weekday as a number</h2>
+    <p>In JavaScript, the first day of the week (0) means "Sunday"</p>
+    <p id="demo9"></p>
+
+    <script>
+        const d9 = new Date();
+        document.getElementById("demo9").innerHTML = d9.getDay();
+    </script>
+    <hr>
+    <h2>JavaScript getDay()The getDay() method returns the weekday as a number</h2>
+    <p>You can use an array to display the name of the weekday:</p>
+
+    <p id="demo10"></p>
+
+    <script>
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        const d10 = new Date();
+        let day11 = days[d10.getDay()];
+        document.getElementById("demo10").innerHTML = day11;
+    </script>
+    <hr>
+    <h2>JavaScript setFullYear()The setFullYear() method sets the year of a date object</h2>
+    <p id="demo11"></p>
+
+    <script>
+        const d11 = new Date();
+        d11.setFullYear(2020);//The setFullYear() method can optionally set month and day:d.setFullYear(2020, 11, 3);
+        document.getElementById("demo11").innerHTML = d11;
+    </script>
+    <hr>
+    <h2>JavaScript setMonth():The setMonth() method sets the mont of a date object</h2>
+    <p>Note that months count from 0. December is month 11:</p>
+
+    <p id="demo12"></p>
+
+    <script>
+        const d12 = new Date();
+        d12.setMonth(11);
+        document.getElementById("demo12").innerHTML = d12;
+    </script>
+    <hr>
+    <h2>JavaScript setDate()The setDate() method sets the day of a date object</h2>
+    <p id="demo13"></p>
+
+    <script>
+        const d13 = new Date();
+        d13.setDate(15);
+        document.getElementById("demo13").innerHTML = d13;
+    </script>
+    <hr>
+    <h2>JavaScript setHours()The setHours() method sets the hours of a date object:</h2>
+    <p id="demo14"></p>
+
+    <script>
+        const d14 = new Date();
+        d14.setHours(22);
+        document.getElementById("demo14").innerHTML = d14;
+    </script>
+    <hr>
+    <h2>JavaScript setMinutes()The setMinutes() method sets the minutes of a date object (0-59)</h2>
+    <p id="demo15"></p>
+
+    <script>
+        const d15 = new Date();
+        d15.setMinutes(30);
+        document.getElementById("demo15").innerHTML = d15;
+    </script>
+    <h2>JavaScript setSeconds()The setSeconds() method sets the seconds of a date object (0-59)</h2>
+    <p id="demo16"></p>
+
+    <script>
+        const d16 = new Date();
+        d16.setSeconds(30);
+        document.getElementById("demo16").innerHTML = d16;
+    </script>
+<p id="month">hello</p>
+    <script>
+        const months1=["January","February","March","April","May","June","July","August","September","October","November","December"];
+        const t1=new Date();
+        let monthsname=months1[t1.getMonth()];
+        document.getElementById("month").innerHTML=monthsname;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="btn()">Click</button>
+    <script>
+        function btn(){
+            alert("aio alert")
+        }
+
+    </script>
+
+    <button id="btn1">Click me</button>
+    <script>
+        let button1=document.getElementById('btn1').addEventListener("click",function(){
+            alert("aio this is alert")
+        })
+    </script>
+
+    <div id="box" style="width: 100px; height: 100px; background-color: blue;"></div>
+    <script>
+        let box1=document.getElementById('box');
+        box.addEventListener("mouseover",function(){
+            box.style.backgroundColor='yellow'
+        })
+        box.addEventListener("mouseout",function(){
+            box.style.backgroundColor='red'
+        })
+    </script>
+
+    <select id="slt">
+        <option>Manglore</option>
+        <option>Banglore</option>
+    </select>
+    <p id="result"></p>
+    <script>
+        document.getElementById("slt").addEventListener("change",function(){
+            document.getElementById("result").innerHTML=this.value
+        })
+    </script>
+
+
+    <form id="myform">
+    <input type="text" id="name">
+    <button type="submit">submit</button>
+</form>
+
+<script>
+    document.getElementById("myform").addEventListener("submit",function(e){
+        e.preventDefault();
+        let name=document.getElementById("name").value;
+        if(name==""){
+            alert("name is required")
+        }else{
+            alert("form submitted")
+        }
+    })
+</script>
+
+<button id="button2">Click</button>
+<p>Total count:<span id="count"></span></p>
+<script>
+    let count=0;
+    document.getElementById("button2").addEventListener("click",function(){
+        count++;
+        document.getElementById("count").innerHTML=count;
+    })
+
+</script>
+</body>
+</html>

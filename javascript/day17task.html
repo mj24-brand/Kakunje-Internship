@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-------------ERROR HANDLING TASK-------------------->
+    <!----------TASK 1 - DIVIDE 2 NUMBERS WITH ERROR HANDLING -------->
+    <script>
+        function divide(a,b){
+            try {
+                if(b===0){
+                    throw new Error("Cannot divide by zero");
+                    
+                }
+                let answer=a/b;
+                console.log(answer);
+            }
+            catch (error){
+                console.log(error.message);
+            }
+            finally{
+                console.log("Operation completed");
+            }
+        }
+        divide(5,0);
+    </script>
+    
+    <!----------LOGIC CODING QUESTIONS----------------->
+    <!----------CHECK IF NUMBER IS PALINDROME--------------->
+    <script>
+        function isPalindrome(num){
+            let actual=num.toString();
+            let reverse=actual.split("").reverse().join("");
+            return actual===reverse;
+        }
+        console.log(isPalindrome(121));
+    </script>
+
+    <!-------------SWAP 2 numbers without third variable------->
+    <script>
+        let a=5;
+        let b=8;
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        console.log("After swapping the value of a and b is :");
+        console.log("a=",a);
+        console.log("b=",b);
+    </script>
+
+    <!----------Remove duplicates from string----------------->
+    <script>
+        function removeDuplicates(string){
+            return [...new Set(string)].join("");
+        }
+        console.log(removeDuplicates("aabbcc"));
+    </script>
+
+
+    <!---------------------REGULAR EXPRESSION------------------>
+    <!-----------CHECK IF STRING CONTAINS ONLY NUMBERS------------>
+   
+     <script>
+        let numbers = "12345";
+        let pattern = /^[0-9]+$/;   
+        console.log(pattern.test(numbers));
+    </script>
+
+    <!-----Find all vowels in string--------------->
+    <script>
+        function findvowels(str){
+        let pattern1 = /[aeiou]/gi;   
+        return str.match(pattern1);
+        }
+        let word="javascript";
+        console.log(findvowels(word));
+    </script>
+</body>
+</html>

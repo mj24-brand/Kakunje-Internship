@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!------------TASK BASED ON FOR LOOP---------------------------->
+    <!---------------TO PRINT NUMBERS FROM 1 TO 10----------------->
+    <p id="for1"></p>
+    <script>
+        let number="";
+        for(i=1;i<=10;i++){
+            number += "The number is : " + i + "<br>";
+        }
+        document.getElementById("for1").innerHTML=number;
+    </script>
+
+    <!------------CALCULATING SUM OF NUMBERS FROM 1 TO N---------------------------------------------->
+    <p id="sum"></p>
+    <script>
+        let sum1= 0;
+        let n=10;
+        for(let i=1;i<=n;i++){
+            sum1 += i;
+        }
+        document.getElementById("sum").innerHTML="Sum of numbers from 1 to " + n + " is: "+sum1;
+    </script>
+
+    <!--------------------------COUNTING EVEN NUMBERS FROM 1 TO 50--------------------->
+    <p id="even"></p>
+    <script>
+        let count=0;
+        for(i=1;i<=50;i++){
+            if(i%2==0){
+                count++;
+            }
+        }
+        document.getElementById("even").innerHTML="The count of even numbers from 1 to 50 is :" + count;
+    </script>
+
+
+<!--------------------------TASK BASED ON IF-ELSE CONDITION---------------------->
+<!-----------------------CHECK THE NUMBER IS POSITIVE, NEGATIVE OR ZERO------------>
+<p id="ifelse"></p>
+<script>
+    const num=-3;
+    let result;
+    if(num>0){
+        result="Number is positive"
+    } else if(num<0){
+        result="Number is negative"
+    }else{
+        result="Number is zero"
+    }
+    document.getElementById("ifelse").innerHTML=result;
+</script>
+
+
+<!----------------------------------GRADE CALCULATOR------------------------------->
+<p id="grade"></p>
+<script>
+    let marks=50;
+    let result1;
+    if(marks>75){
+        result1="Grade : A ";
+    } else if(marks>=60 && marks<=75){
+        result1="Grade B ";
+    } else {
+        result1= "Grade C";
+    }
+    document.getElementById("grade").innerHTML=result1;
+</script>
+
+<!-----------STOPPING LOOP AT FIRST NEGATIVE NUMBER------------>
+<p id="break"></p>
+<script>
+    let text=[5, 10, 15, -2, 20];
+    let result3="";
+    for(i=0;i<text.length;i++){
+        if(text[i]<0){
+            break;
+        }
+        result3+=text[i] + " ";
+    }
+    document.getElementById("break").innerHTML=result3;
+</script>
+
+<!--------------Skip Even numbers---------------->
+<p id="continue"></p>
+<script>
+    let text4=[1,2,3,4,5,6];
+    let result4="";
+    for(i=0;i<text4.length;i++){
+        if(text4[i]%2==0){
+            continue;
+        }
+        result4+=text4[i] + " ";
+    }
+    document.getElementById("continue").innerHTML=result4;
+</script>
+</body>
+</html>

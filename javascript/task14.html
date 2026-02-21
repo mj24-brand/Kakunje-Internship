@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---------------------TASK 1-------------------------------->
+    <!----------Creating two buttons------------------------->
+    <button type="button" id="btn1">Button1</button>
+     <button type="button" id="btn2">Button2</button>
+     <h2>Total clicks :<span id="count">0</span></h2>
+    <script>
+        let count=0;
+        let click=document.getElementById("btn1");
+        click.addEventListener("click",function(){
+            count+=1;
+            document.getElementById('count').innerHTML=count;
+        })
+        let click1=document.getElementById("btn2");
+        click1.addEventListener("click",function(){
+            count-=1;
+            document.getElementById('count').innerHTML=count;
+        })
+    </script><br>
+
+
+<!-------------Creating a dropdown with Light/Dark options--------->
+<select id="selectTheme">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+</select>
+<script>
+   let dropdown=document.getElementById('selectTheme');
+   dropdown.addEventListener("change",function(){
+    if(dropdown.value==="light"){
+    document.body.style.backgroundColor='white';
+    }
+    else{
+    document.body.style.backgroundColor='black';
+    }
+   })
+</script><br><br><br>
+
+<!------------Creating a form with email input------->
+<form id="form1">
+    <label>Email:</label>
+    <input type="email"  id="mail">
+    <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+    <script>
+        document.getElementById("form1").addEventListener("submit",function(e){
+            e.preventDefault();
+            let mail=document.getElementById("mail").value;
+            let msg=document.getElementById("message");
+
+            if(mail===""){
+                msg.innerText="Email required";
+            }
+            else{
+                msg.innerText="Email Saved";
+            }
+        })
+    </script><br><br>
+
+    <!----------------Creating an input box-------->
+    <input type="text" id="input" placeholder="type something...">
+    <p id="counter">Characters typed:0</span></p>
+    <script>
+     let inputBox=document.getElementById('input');
+     let countText=document.getElementById('counter');
+     inputBox.addEventListener("input",function(){
+        let length=inputBox.value.length;
+        countText.innerHTML="Characters Typed:"+length;
+    })
+    </script><br><br>
+
+    <!-------Creating a text and changing the styles-->
+    <p id="paragraph">Hello guys, Good Morning</p>
+    <script>
+        let para=document.getElementById('paragraph');
+        para.addEventListener("mouseover",function(){
+            para.style.color='green';
+        })
+        para.addEventListener("mouseout",function(){
+            para.style.color='black';
+        })
+    </script>
+
+
+<!----------------------------TASK 2------------------------------>
+<!--------------------Convert to Uppercase------------------------->
+<script>
+    let name="javascript";
+    console.log(name.toUpperCase());
+</script>
+
+<!-------------------Find String Length------------------------->
+<script>
+    let course="JavaScript";
+    console.log(course.length);
+</script>
+
+
+<!------------------Extract substring------------------------->
+<script>
+    let word="Developer";
+    console.log(word);
+    console.log(word.slice(0,4));
+</script>
+
+<!------------------Replace word------------------------->
+<script>
+    let sentence="Hello World";
+    console.log(sentence);
+    console.log(sentence.replace("World","JavaScript"));
+</script>
+
+<!------------------Checking if string contains word------------------------->
+<script>
+    let email="test@gmail.com";
+    console.log(email);
+    console.log(email.includes("test"));
+</script>
+</body>
+</html>

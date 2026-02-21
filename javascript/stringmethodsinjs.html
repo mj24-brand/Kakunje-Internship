@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name='Jyothika';
+        console.log(name.length) //to calculate length of the string
+
+        console.log(name.toUpperCase())//to convert to uppercase
+
+        console.log(name.toLowerCase())//to convert to lowercase
+
+        //console.log(name.slice(0,5));//slice or to get substring
+
+        console.log(name.replace('jyot','JYOT'));//replace substring
+
+        let str=' Hello World '
+        console.log(str)
+        console.log(str.trim());//remove whitespace from string
+
+        let sentence='this is js string methods';
+        console.log(sentence.includes('js'));
+        console.log(sentence.includes('a'));
+
+        let email='abc@gmail.com';
+        console.log(email.includes('@'));//includes
+
+        let str2='javascript';
+        console.log(str2.charAt(2))//charat
+
+        //split
+        let fruits='apple,orange,grapes';
+        let result=fruits.split(',')//split the string into array
+        console.log(result)
+
+        //concate
+        let string1='hello';
+        let string2='world';
+        let result4=string1.concat(" ",string2);
+        console.log(result4);
+
+        //template literals
+        let a="html";
+        console.log(`hello ${a}`);
+        
+//toupeercase,tolowercase,slice,split,trim,includes,charat,concat,template literals
+    
+    </script>
+</body>
+</html>

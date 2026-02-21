@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        let str="js is a scripting language or language of web";
+        document.getElementById('demo1').innerHTML=str.indexOf("language");
+    </script>
+
+    <p id="demo2"></p>
+    <script>
+        let str2="js is a scripting language or language of web";
+        document.getElementById('demo2').innerHTML=str2.lastIndexOf("language");
+    </script>
+
+    <p id="demo3"></p>
+    <script>
+        let str3="js is a scripting language or language of web";
+        document.getElementById('demo3').innerHTML=str3.search("or");
+    </script>
+
+     <p id="demo4"></p>
+    <script>
+        let str4="js is a scripting languAge or languAge of web";
+        document.getElementById('demo4').innerHTML=str4.match(/a/gi);
+    </script>
+
+     <p id="demo5"></p>
+    <script>
+        let str5="js is a scripting languAge or languAge of web";
+        document.getElementById('demo5').innerHTML=str5.startsWith('js');
+    </script>
+
+    <p id="demo6"></p>
+    <script>
+        let str6="js is a scripting languAge or languAge of web";
+        document.getElementById('demo6').innerHTML=str6.endsWith('js');
+
+        //indexof,lastindexof,search,match,startswith,endswith
+    </script>
+    <p id="hello">
+    </p>
+    <script>
+        let para="hello i am jyo";
+        document.getElementById("hello").innerHTML=para.startsWith("jyo");
+    </script>
+</body>
+</html>
