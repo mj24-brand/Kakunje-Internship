@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: rgb(176, 136, 213);
+    padding: 32px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.logo{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-link{
+    list-style-type: none;
+}
+.nav-link li{
+    word-spacing: 15px;
+    margin-left: 12px;
+    display: inline;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-link li a:hover{
+    color: wheat;
+}
+#Home{
+    padding: 50px;
+}
+h1{
+    color: rgb(125, 22, 22);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Home-right img{
+    height: 300px;
+    margin-left: 350px;
+    border-radius: 40px;
+    box-shadow: 4px 4px black;
+}
+#Categories{
+    padding: 50px;
+}
+.c1 li{
+    list-style-type: none;
+}
+.c1 li p{
+    text-align: center;
+    font-size: 25px;
+}
+#h1{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+.Category-page{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-left: 100px;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Category-page img{
+    height: 300px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-left: 300px;
+    box-shadow: 4px 4px black;
+    padding:auto;
+    align-items: center;
+}
+#pd1{
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 11px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+#pd1 img{
+    display: flex;
+    justify-content: space-between;
+}
+
+#My-order{
+    padding: 50px;
+    color: rgb(83, 16, 16);
+}
+input[type=text]{
+    width: 25%;
+    padding: 10px;
+    border: 2px solid black;
+    margin-left: 520px;
+}
+.para{
+    text-align: center;
+    font-size: 25px;
+}
+.button{
+    width: 85px;
+    background-color: black;
+    color: white;
+}
+
+
+.Account-info{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.p1{
+    display: inline-block;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: lightgrey;
+}
+.p11{
+    font-size: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+input[type=number]{
+    border: 3px solid brown;
+}
+input[type=email]{
+    border: 3px solid brown;
+}

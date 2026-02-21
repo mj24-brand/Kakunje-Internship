@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #99c5dc;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Card Container */
+        .card-container{
+            width: 400px;
+            height: 450px;
+            padding: 18px;
+            border-radius: 35px;
+            background: linear-gradient(90deg, pink,yellow,green);
+            color: black;
+            box-shadow: 10px 15px 18px rgb(3, 3, 124);
+            position: relative;
+
+            /* transition properties */
+            transition-property: transform, box-shadow;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+        }
+
+        /*  Card Heading */
+        .card-container h2 {
+            writing-mode: horizontal-tb;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgb(175, 36, 36);
+            position: absolute;
+            bottom: 15px;
+        }
+
+        /*  Description Text */
+        .description {
+            width: 300px;
+            height: 200px;
+            margin-top: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 14px;
+        }
+
+        /* Hover Effects (2D + 3D Transform) */
+
+        .card-container:hover {
+             width: 500px;
+             background: linear-gradient(to right, blue, yellow);
+            transform: 
+                translateY(-10px)
+                scale(1.05)
+                rotate(3deg)
+                skew(2deg, 2deg)
+                rotateY(30deg);     
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <h2> MJ-ACCESSORIES</h2>
+        <img src="C:\Users\wwwje\Downloads\The-Best-Clothing-Accessories.webp" style="width: 100%;">
+        <div class="description">
+            This is a classy MJ accessories product design using HTML and advanced CSS properties.
+        </div>
+    </div>
+
+</body>
+</html>

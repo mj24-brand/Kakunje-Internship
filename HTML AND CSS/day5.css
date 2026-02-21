@@ -1,0 +1,218 @@
+/*universal selector*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: rgb(4, 4, 50);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slide 1s ease;
+}
+@keyframes slide{
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*transition: font-size 2s ease-in;*/
+    animation: example 2s linear forwards;
+}
+@keyframes example{
+    from{
+        color: aliceblue;
+        font-size: 26px;
+    }
+    to{
+        color: red;
+        font-size: 28px;
+    }
+}
+
+.logo:hover{
+    font-size:40px ;
+    transform: rotate(20deg);
+    color: brown;
+}
+
+.nav-link{
+    list-style-type: none; /*removes bullet points*/
+}
+
+.nav-link li{
+    display: inline;
+    margin-left: 25px;
+    word-spacing: 15px;
+}
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-link a:hover{
+    color: rgb(70, 148, 237);
+    text-decoration: none;
+}
+
+/*home section*/
+#Home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Home-left{
+    font-size: 36px;
+}
+.Home-left span{
+    color: blue;
+}
+.Home-left p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.Home-right img{
+    width: 220px;
+    height: 220px;
+    border: 4px solid blue;
+    border-radius: 50%;
+    opacity: 8.9 ;
+    animation: zoom 1.2s ease;
+}
+@keyframes zoom{
+    from{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* about section*/
+#About{
+    padding: 50px;
+    text-align: center;
+    background-color: lightblue;
+    transition: background-color 0.5s ease;
+}
+#About:hover{
+    background-color: lightgreen;
+}
+#About p{
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/*skill section*/
+#Skills{
+    padding: 50px;
+    text-align: center;
+}
+
+#skills h2{
+    margin-bottom: 25px;
+}
+
+.Skill-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill{
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.skill:hover{
+    background-color: blue;
+}
+/*Contact section*/
+#Contact{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: bisque;
+}
+
+.Contact-left p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.Contact-left i{
+    color: blue;
+    margin-right: 8px;
+}
+.Contact-right iframe{
+    width: 300px;
+    height:200px;
+    border: 0;
+    border-radius: 10px;
+
+}
+footer{
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(18, 18, 183);
+    color: white;
+}
+@media (max-width:400px){
+   #navbar{
+    flex-direction: column;
+   }
+   .nav-link{
+    flex-direction: column;
+    align-items: center;
+   }
+   #Home{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   }
+   .Home-left{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   }
+   .Home-right img{
+    width: 200px;
+    height: 200px;
+   }
+   #Contact{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+   }
+}

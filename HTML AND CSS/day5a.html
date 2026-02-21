@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            background-color: aliceblue;
+            padding: 25px;
+            margin: auto;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=text]:focus{
+            background-color: blueviolet;
+            border: 5px solid green;
+        }
+
+        input[type=email]{
+            width: 100%;
+            background-color: aliceblue;
+            padding: 25px;
+            margin: auto;
+            display: inline-block;
+            border: 4px double black;
+            border-radius: 4px;
+            cursor: pointer;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+
+        input[type=password]{
+            width: 100%;
+            background-color: aliceblue;
+            padding: 25px;
+            margin: auto;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]{
+            width: 100%;
+            background-color: yellow;
+            padding: 25px;
+            margin: auto;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter the name" value="Jyo"><br>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter the email"><br>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter the password" required><br>
+
+        <input type="submit" value="submit">
+        
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <br>
+
+        <input type="checkbox">opt1
+        <input type="checkbox">opt2
+        <input type="checkbox">opt3
+        <br>
+
+        <select>
+            <option>Java</option>
+             <option selected>Python</option>
+              <option>Javascript</option>
+               <option>HTML</option>
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automatic Loading Animation</title>
+    <style>
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 8px solid lightgray;
+            border-top: 8px solid blueviolet;
+            border-radius: 50%;
+            margin: 40px auto;
+            animation-name: loader;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes loader {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .span-container span {
+            background: rgb(44, 177, 222);
+            padding: 10px;
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .span-container span {
+                display: block;
+            }
+
+            .automatic-img {
+                display: none;
+            }
+        }
+
+        @media (min-width: 601px) {
+            .span-container span {
+                display: inline;
+            }
+
+            .automatic-img {
+                height: 100px;
+                width: 100px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            gap: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(227, 154, 128);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                height: 100vh;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Circular Loader</h2>
+    <div class="loader"></div>
+
+    <h2>Media Queries</h2>
+
+    <div class="span-container">
+        <span>Span 1</span>
+        <span>Span 2</span>
+        <span>Span 3</span>
+    </div>
+
+    <p>This is a MJ product Accessories with best offers</p>
+    <img src="C:\Users\wwwje\Downloads\The-Best-Clothing-Accessories.webp" class="automatic-img" alt="Image">
+
+    <h2>Centered Layout with Direction Change</h2>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>

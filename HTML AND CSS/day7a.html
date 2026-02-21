@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.polar{
+            width: 250px;
+            box-shadow: 5px 10px 4px red;
+            text-align: center;
+        }
+        div.header{
+            color: aliceblue;
+            background-color: rgb(104, 208, 104);
+            padding: 10px;
+            font-size: 40px;
+        }
+        div.container{
+            padding: 10px;
+        }
+        p.test1{
+            width: 200px;
+            white-space: nowrap;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        p.test2{
+             width: 200px;
+            white-space: nowrap;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p.test3{
+             width: 11em;
+            border: 1px solid black;
+            word-wrap: break-word;
+        }
+        p.test4{
+             width: 11em;
+            border: 1px solid black;
+            word-break: break-all;
+        }
+        p.test5{
+             width: 13em;
+            border: 1px solid black;
+            word-break: keep-all;
+        }
+        p.test6{
+            writing-mode: vertical-lr;
+        }
+        p.translate{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: translate(50px,100px);
+        }
+        p.rotate{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: rotate(-20deg);
+        }
+        div.scale {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(1.5,1.5);
+}
+p.scale-x{
+     margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale-x(2);
+
+}
+
+p.scale-y{
+     margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale-y(4);
+
+}
+p.skew{
+     margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: skew(20deg, 15deg);
+
+}
+p.rotatez{
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: rotatez(20deg);
+        }
+
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s, height 4s, background 2s;
+            transition-delay: 1s;
+        }
+        .transition:hover{
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            transition-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+  <div class="polar">
+    <img src="C:/Users/wwwje/Downloads/a.png" style="width: 100%;">
+  <div class="container">
+    <h1>Nature</h1>
+  </div>
+  </div>
+  <h2>text-overflow:clip:</h2>
+  <p class="test1">This is some long text that will not fit in box</p>
+  <h2>text-overflow:clip:</h2>
+  <p class="test2">This is some long text that will not fit in box</p>
+
+  <p class="test3">This is some long text thatwillthatwillthatwillthatwill not fit in box</p>
+   <p class="test4">This is some long text thatwillthatwillthatwillthatwill not fit in box</p>
+    <p class="test5">This is some long text thatwillthatwillthatwillthatwill not fit in box</p>
+    <p class="test6">This is some long text thatwillthatwillthatwillthatwill not fit in box</p>
+
+    <p class="translate">It move from current position</p>
+    <p class="rotate">It move from current position</p>
+
+    <h1>The scale() Method</h1>
+
+<p>The scale() method increases or decreases the size of an element.</p>
+
+<div class="scale">
+This div element is two times of its original width, and three times of its original height.
+
+<p class="scale-x">It move from current position</p>
+<p class="scale-y">It move from current position</p>
+<p class="skew">It move from current position</p>
+<p class="rotatez">It move from current position</p>
+
+<p class="transition">
+    Hello
+</p>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+

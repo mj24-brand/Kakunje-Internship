@@ -1,0 +1,5 @@
+"javascript.suppressSourceMapWarnings": true
+function toggleDetails(id) {
+  let section = document.getElementById(id);
+  section.style.display = (section.style.display === "block") ? "none" : "block";
+}
