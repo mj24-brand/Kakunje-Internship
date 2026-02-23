@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--------------navbar section------------------>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow fixed-top shadow">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold text-white">
+                <i class="bi bi-laptop"></i> DIGITAL EDU
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#" active>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Web development</a></li>
+                            <li><a href="" class="dropdown-item">Java Full Stack</a></li>
+                            <li><a href="" class="dropdown-item">Python full stack</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="" class="dropdown-item text-primary">New launch</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success position-relative" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar" style="width: 60px; height: 30px;">
+                            <i></i>
+                            <span class="position-absolute top-0 badge bg-danger">Links</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <!----------Hero section----------->
+    <section id="home" class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Build Skills With Courses Flexible Online</h1>
+            <p class="lead">We know how large objects will act, but things an a small scale.</p>
+            <i class="bi bi-fast-forward-fill"></i>
+            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+                Now</button>
+        </div>
+    </section>
+
+    <!-------------alert------------->
+    <div class="container mt-3" id="alertContainer">
+    </div>
+
+    <!-----------------------tabs----------->
+    <div class="container my-5">
+        <ul class="nav nav-pills justify-content-center mb-3">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill"
+                    data-bs-target="#tab1">Scholarship Facility</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">Skilled
+                    Lecturers</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab3">Book Library &
+                    Store</button></li>
+        </ul>
+
+        <div class="tab-content text-center">
+            <div class="tab-pane fade show active" id="tab1">
+                <i></i>
+                <p>Scholarship for first come first serve..Book your Slots now!</p>
+            </div>
+
+            <div class="tab-pane fade show" id="tab2">
+                <i></i>
+                <p>Dive into your course with experience lecturers.</p>
+            </div>
+
+            <div class="tab-pane fade show" id="tab3">
+                <i></i>
+                <p>Have a store of book library with all sources.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!------------carousel------------------->
+
+    <div class="container mt-3">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The carousel -->
+            <div class="container mb-5">
+                <div id="caousecarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="C:\Users\wwwje\Downloads\pexels-suzyhazelwood-1122865.jpg" alt="course1"
+                                class="d-block w-100" height="500">
+                        </div>
+
+                        <div class="carousel-item active">
+                            <img src="C:\Users\wwwje\Downloads\young-student-sitting-table-use-laptop.jpg" alt="course1"
+                                class="d-block w-100" height="500">
+                        </div>
+
+                        <div class="carousel-item active">
+                            <img src="C:\Users\wwwje\Downloads\beautiful-girl-study-library.jpg" alt="course1"
+                                class="d-block w-100" height="500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+
+        <!------------courses cards--------------------------------->
+        <section id="courses" class="container my-5">
+            <h2>POPULAR COURSES</h2>
+            <div class="row g-4">
+                <div class="col-md-4 ">
+                    <div class="card shadow course-card text-bg-warning">
+                        <div class="card-body text-center">
+                            <i></i>
+                            <h5 class="card-title mt-3">Full stack development</h5>
+                            <p>A course packed with full-Stack development. Have your access and start with your goal.
+                            </p>
+                            <button class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Enroll</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card shadow course-card text-bg-warning">
+                        <div class="card-body text-center ">
+                            <i></i>
+                            <h5 class="card-title mt-3">Aerospace courses</h5>
+                            <p>Interested in Aerospace learning. Here's a course packed with aerospace learning..Book
+                                your
+                                slot now!</p>
+                            <button class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Enroll</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card shadow course-card text-bg-warning">
+                        <div class="card-body text-center">
+                            <i></i>
+                            <h5 class="card-title mt-3">MBA Courses</h5>
+                            <p>Learn MBA courses on Finanace and HR and strive your place in your dream company.</p>
+                            <button class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Enroll</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--------------------faq section-------------->
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faq">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">What is the
+                            duration
+                            of this Course?</button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                        <div class="accordion-body">The course is a 6-week, self-paced program, designed to be completed
+                            with 5-7 hours of study per week.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">How
+                            lessons are delivered?</button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Lessond include pre-recorded video lectures,downloadble PDF's and
+                            interactive quizzes.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">Is
+                            this
+                            course mobile-friendly?</button>
+                    </h2>
+                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                        <div class="accordion-body">Yes, all content is accessible via desktop,tablet and mobile
+                            devices.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------contact------------------->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">
+                <i class="bi bi-telephone-fill"></i>  CONTACT US</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control text-bg-warning" id="email" placeholder="Enter email"
+                            name="email">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control text-bg-info" id="pwd" placeholder="Enter password"
+                            name="pswd">
+                        <label for="comment">Comments:</label>
+                        <textarea class="form-control text-bg-success" rows="5" id="comment" name="text"></textarea>
+                        <hr>
+                        <button class="btn btn-dark">Send message</button>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>Address: Madikeri - 571201, Kodagu</p>
+                    <i class="bi bi-phone"></i>
+                    <p>Phone no : 6699875546</p>
+                    <i class="bi bi- text-danger"></i>
+                    <i class="bi bi-envelope"></i>
+                    <p>Email : jyo213@gmail.com</p>
+                </div>
+                <div class="col md-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31170.336024358665!2d75.73426908518069!3d12.43025459070744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1771841897144!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <!------------footer section--------------->
+        <footer class="text-bg-dark text-center">
+            <p>&copy; DIGITAL-EDU 2026</p>
+        </footer>
+
+        <!-------modal-------->
+        <div class="modal fade" id="registerModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Registration Form</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerForm">
+                            <div class=" mb-3 mt-3">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    name="name">
+                            </div>
+                            <div class=" mb-3 mt-3">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    name="email">
+                            </div>
+                            <div class=" mb-3 mt-3">
+                                <label for="phno">Phone no:</label>
+                                <input type="number" class="form-control" id="phno" placeholder="Enter your phone no"
+                                    name="number">
+                            </div>
+                            <!--------------dropdown with options---------------->
+                            <div class="container mt-3">
+                                <label>Select Courses</label>
+                                <select class="form-select">
+                                    <option>Web Development</option>
+                                    <option>Java Full Stack</option>
+                                    <option>Python Full Stack</option>
+                                    <option>Aerospace Courses</option>
+                                    <option>MBA Course</option>
+                                </select>
+                            </div><br><br>
+
+                            <!-------------------------------Terms and conditions---------------->
+                            <div class="container mb-3">
+                                <label class="form-label d-block">Terms and Conditions: </label>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" id="terms" value="Terms" name="Termsc"
+                                        class="form-check-input">
+                                    <label for="terms" class="form-check-label">I agree to the terms and
+                                        conditions</label>
+                                </div>
+                            </div>
+                            <!----------------------Submit with success alert------------>
+                            <div class="container mb-3">
+                                <button type="submit" class="btn btn-success">Register</button>
+                            </div>
+                            <br><br>
+
+                            <div class="container mb-3">
+                                <p>NOTE : All the required details on payment is sent to Registered email..</p>
+                            </div>
+
+                            <!-------------------modal footer------------------->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------off canvas------------------->
+        <div class="offcanvas offcanvas-end text-bg-dark" id="sidebar">
+            <div class="offcanvas-header">
+                <h5>QUICK LINKS</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="list-group">
+                    <li class="list-group-item text-bg-info">Student login</li>
+                    <li class="list-group-item text-bg-success">Assignmemts</li>
+                    <li class="list-group-item text-bg-warning">Certificates</li>
+                </ul>
+                <br>
+                <div class="row g-12">
+                <div class="col-md-12 ">
+                    <div class="card shadow course-card text-bg-danger">
+                        <div class="card-body text-center">
+                            <i></i>
+                            <h5 class="card-title mt-3">Explore Now!</h5>
+                            <p>All new courses that makes you prepared for the dream company you aspire..Book your slots befor it expires!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+            document.getElementById("registerForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                document.getElementById("alertContainer").innerHTML = `<div class="alert alert-success alert-dismissible fade show text-center">
+            Registration succesfull!
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>`;
+
+                var modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
+                modal.hide();
+            });
+        </script>
+</body>
+
+</html>
