@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+       <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check form-switch mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form> 
+  <br>
+  <br>
+
+  <!-------------------------------------------------------------->
+  <h2>Textarea</h2>
+  <p>Use the .form-control class to style textareas as well:</p>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  <br>
+
+  <!---------------------Inline forms------------------------------------------->
+  <form>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Enter email" name="email">
+        </div>
+        <div class="col">
+            <input type="password" class="form-control" placeholder="Enter password" name="password">
+        </div>
+    </div>
+  </form><br>
+
+  <!--------------------form control size----------------------->
+  <h2>Form Control Size</h2>
+  <p>You can change the size of .form-control inputs with .form-control-lg or .form-control-sm:</p>
+  <form>
+    <input type="text" class="form-control form-control-lg" placeholder="Large input">
+    <input type="text" class="form-control mt-3" placeholder="Normal input">
+    <input type="text" class="form-control form-control-sm mt-3" placeholder="Small input">
+  </form>
+  <br>
+  <br>
+
+  <!-----------------------disabled and readonly---------------->
+  <form>
+    <input type="text" class="form-control" placeholder="normal input">
+    <input type="text" class="form-control mt-3" placeholder="disabled input" disabled>
+    <input type="text" class="form-control mt-3" placeholder="readonly input" readonly>
+  </form>
+  <br>
+  <br>
+
+  <!-----------------------PLaintext---------------->
+  <h2>Plaintext</h2>
+  <p>Use the .form-control-plaintext class to style an input field without borders, but with correct marigins and padding:</p>
+  <form>
+    <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+    <input type="text" class="form-control mt-3" placeholder="Normal input">
+  </form>
+  <br>
+  <br>
+  <!--------------------------color picker--------------->
+  <h2>Color Picker</h2>
+  <p>To style an input with type="color" properly, use the .form-control-color class:</p>
+  <form>
+    <label for="myColor" class="form-label">Color picker</label>
+    <input type="color" class="form-control form-control-color" id="myColor" value="#CCCCCC" title="Choose a color">
+  </form>
+</body>
+</html>
