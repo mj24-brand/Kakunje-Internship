@@ -1,2 +1,2 @@
 # Kakunje-Internship
-Check out my work during the internship period
+Check out my work during the internship period (FULL STACK DEVELOPMENT/MERN STACK)
