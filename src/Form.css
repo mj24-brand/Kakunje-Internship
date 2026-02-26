@@ -1,0 +1,21 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+form{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(188, 211, 134);
+}
+input{
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 50px;
+}
+button{
+    background-color: bisque;
+}

@@ -1,0 +1,25 @@
+.btn{
+    background-color: rgb(211, 135, 198);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forms{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+form{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(203, 211, 134);
+}
+input{
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 50px;
+}

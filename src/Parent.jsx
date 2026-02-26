@@ -1,12 +1,14 @@
-import React from "react";
-import Product from "./Child";
-function Parent(){
-    return(
-        <div>
-            <h2>//Parent-Child props rendering//</h2>
-            <Product name="Laptop" price={50000}/>
-            <Product name="Mobile" price={20000}/>
-        </div>
-    )
+import React from 'react'
+import Child1 from './Child1';
+
+const Parent = () => {
+    const[count,setCount]=React.useState(0);
+  return (
+    <div>
+      <Child1 name="Jyothika"/>
+      <button onClick={()=>setCount(count+1)}>increase</button>
+    </div>
+  )
 }
-export default Parent;
+
+export default Parent
