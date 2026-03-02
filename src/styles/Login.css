@@ -1,0 +1,61 @@
+.login{
+    padding: 40px;
+    text-align: center;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 15px;
+
+}
+
+.login input .login textarea{
+    margin: 10px 0;
+    padding: 20px;
+
+}
+
+.login button{
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.login .extra-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login .link-btn {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+.login .link-btn1{
+    background-color: red;
+}
+
+.login .link-btn2{
+    background-color: blue;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}

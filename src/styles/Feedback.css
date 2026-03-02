@@ -1,0 +1,34 @@
+.feedback{
+    padding: 40px;
+    text-align: center;
+}
+
+.feedback form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+
+}
+
+.feedback input .feedback textarea{
+    margin: 10px 0;
+    padding: 10px;
+
+}
+
+.feedback button{
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.navbar{
+    background: rgb(209, 123, 123);
+    color: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navbar button{
+    padding: 6px 12px;
+    border: none;
+    cursor:pointer
+}
