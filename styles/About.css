@@ -1,0 +1,14 @@
+.about{
+    text-align: center;
+    padding: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about img{
+    display: inline-block;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}

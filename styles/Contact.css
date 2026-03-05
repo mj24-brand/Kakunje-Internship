@@ -1,0 +1,36 @@
+.contact{
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.contact-title{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-desc{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-info p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.feedback form{
+  background-color: aquamarine;
+  border-color: blue;
+}
+.feedback input{
+  background-color: rgb(210, 150, 75);
+}
+.contact.light {
+  background-color: white;
+  color: black;
+}
+
+.contact.dark {
+  background-color: black;
+  color: white;
+}
