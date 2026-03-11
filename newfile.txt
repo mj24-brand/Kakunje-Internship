@@ -1,0 +1,16 @@
+//heloo world!
+
+//status code
+200 ok(success) request successful
+
+201 - created(creates new resources)
+
+400 - bad request - client sent wrong data
+
+401 - unauthorized - not logged in
+
+403 - forbidden - access denied
+
+404 - not found - page not found
+
+500 - internal server error - server crashed
