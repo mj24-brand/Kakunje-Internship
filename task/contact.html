@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Contact - JYOTHIKA MJ</title>
+</head>
+
+<body class="bg-blue-200">
+
+  <nav class="bg-black text-white p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">JYOTHIKA MJ</h1>
+    
+    <ul class="flex space-x-6">
+      <li><a href="index.html" class="hover:text-red-300">Home</a></li>
+      <li><a href="about.html" class="hover:text-red-300">About</a></li>
+      <li><a href="skills.html" class="hover:text-red-300">Skills</a></li>
+      <li><a href="project.html" class="hover:text-red-300">Portfolio</a></li>
+      <li><a href="contact.html" class="hover:text-red-300">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="max-w-6xl mx-auto mt-10 px-4">
+    <h2 class="text-3xl font-bold text-center mb-2">CONTACT ME</h2>
+    <p class="text-center text-black-600 mb-10">
+      Let's connect! Feel free to reach out using the form or my contact details below.
+    </p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-6">
+        <div class="bg-red-100 p-6 rounded-xl shadow flex items-center space-x-4">
+          <div>
+            <h3 class="font-semibold">Email</h3>
+            <p class="text-black-600">jjyo3162@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="bg-yellow-100 p-6 rounded-xl shadow flex items-center space-x-4">
+          <div>
+            <h3 class="font-semibold">Phone</h3>
+            <p class="text-black-600">+91 8904496593</p>
+          </div>
+        </div>
+
+        <div class="bg-green-100 p-6 rounded-xl shadow flex items-center space-x-4">
+          <div>
+            <h3 class="font-semibold">Location</h3>
+            <p class="text-black-600">Madikeri, India</p>
+          </div>
+        </div>
+
+      </div>
+      <form class="bg-red-100 p-8 rounded-xl shadow space-y-4">
+
+        <h3 class="text-xl font-semibold mb-4">Send Me Your Details</h3>
+
+        <input 
+          type="text" 
+          placeholder="Your Name" 
+          required
+          class="w-full p-3 border bg-red-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+
+        <input 
+          type="email" 
+          placeholder="Your Email" 
+          required
+          class="w-full p-3 border bg-red-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+
+        <textarea 
+          rows="5" 
+          placeholder="Your Message" 
+          required
+          class="w-full p-3 border bg-red-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        ></textarea>
+
+        <button 
+          type="submit"
+          class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <footer class="bg-black text-white text-center p-4 mt-10">
+    <p>© 2026 MJ. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
